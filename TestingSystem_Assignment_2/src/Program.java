@@ -4,6 +4,7 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.util.Locale;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Program {
 	public static void main(String[] args) {
@@ -645,20 +646,48 @@ public class Program {
 //		Exercise 5: Input from console
 //		Question 1:
 //		Viết lệnh cho phép người dùng nhập 3 số nguyên vào chương trình
+		System.out.println("\nExecircise 5: ");
+		System.out.println("Question 1: ");
+
+		Scanner scanner = new Scanner(System.in);
+		int a, b, c;
+		System.out.println("Nhập lần lượt 3 số nguyên: ");
+		a = scanner.nextInt();
+		b = scanner.nextInt();
+		c = scanner.nextInt();
+		System.out.println("Số nguyên vừa nhập: " + a + " " + b + " " + c);
+
 //		Question 2:
 //		Viết lệnh cho phép người dùng nhập 2 số thực vào chương trình
+		System.out.println("Question 2: \n Nhập lần lượt 2 số thực: ");
+		float x1, x2;
+		x1 = scanner.nextFloat();
+		x2 = scanner.nextFloat();
+
 //		Question 3:
 //		Viết lệnh cho phép người dùng nhập họ và tên
+		String hoTen;
+		System.out.println("\n Question 3: \n Nhập họ tên: ");
+		hoTen = scanner.next();
+
 //		Question 4:
 //		Viết lệnh cho phép người dùng nhập vào ngày sinh nhật của họ
+
+		System.out.println("Mời bạn nhập vào năm sinh: ");
+		int year = scanner.nextInt();
+		System.out.println("Mời bạn nhập vào tháng sinh: ");
+		int month = scanner.nextInt();
+		System.out.println("Mời bạn nhập vào ngày sinh: ");
+		int day = scanner.nextInt();
+		LocalDate dateBirth = LocalDate.of(year, month, day);
+		System.out.println("Ngày sinh của bạn là: " + dateBirth);
+
 //		Question 5:
 //		Viết lệnh cho phép người dùng tạo account (viết thành method)
 //		Đối với property Position, Người dùng nhập vào 1 2 3 4 5 và vào
 //		chương trình sẽ chuyển thành Position.Dev, Position.Test,
 //		Position.ScrumMaster, Position.PM
-//
-//	
-//
+
 //		Question 6:
 //		Viết lệnh cho phép người dùng tạo department (viết thành method)
 //		Question 7:
